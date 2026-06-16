@@ -1,124 +1,212 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Soleil Mbayi</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Soleil MBAYI — Tech & Innovation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600&family=Playfair+Display:ital@1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-<header>
-    <nav>
-        <h2>SOLEIL MBAYI</h2>
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-logo">S.</div>
+    <button class="burger" id="burger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#hero">Accueil</a></li>
+      <li><a href="#about">À propos</a></li>
+      <li><a href="#projects">Projets</a></li>
+      <li><a href="#beyond">Au-delà du code</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-        <ul>
-            <li><a href="#about">À propos</a></li>
-            <li><a href="#engagement">Engagement</a></li>
-            <li><a href="#skills">Compétences</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-</header>
-
-<section class="hero">
-
-    <div class="photo">
-        <img src="fondateur.jpeg" alt="Photo de Soleil">
-    </div>
-
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-bg-text">SOLEIL</div>
     <div class="hero-content">
-        <h1>SOLEIL MBAYI</h1>
+      <div class="hero-photo-wrap">
+        <img src="fondateur.jpeg" alt="Soleil MBAYI" id="hero-photo" />
+        <div class="photo-ring"></div>
+      </div>
+      <div class="hero-text">
+        <p class="hero-eyebrow">Kinshasa · RDC</p>
+        <h1 class="hero-name">Soleil<br /><span>MBAYI</span></h1>
+        <p class="hero-tagline">IA · Data Science · Entrepreneuriat</p>
+        <a href="#projects" class="btn-primary">Voir mes projets</a>
+      </div>
+    </div>
+    <div class="scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
 
-        <p class="title">
-            Protecteur de l'Héritage Bantou • Président Fondateur de la Fondation Dynastie Bantou • Conférencier
-        </p>
-
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="section-label">01 — À propos</div>
+    <div class="about-grid">
+      <div class="about-text">
+        <h2>Construire<br /><em>l'Afrique</em><br />de demain.</h2>
         <p>
-            « Une jeunesse consciente de son identité est une jeunesse capable de bâtir l'avenir de l'Afrique. »
+          Je suis <strong>Soleil MBAYI</strong>, développeur, chercheur et entrepreneur basé en République Démocratique du Congo. 
+          À l'intersection de la technologie et de l'impact humain, je conçois des solutions qui répondent aux défis concrets de mon continent.
         </p>
+        <p>
+          Fondateur de <strong>DYNASTIE</strong> (dynasty_bantou), une fondation culturelle dédiée à la valorisation du patrimoine 
+          subsaharien et au développement des artisans locaux à travers l'entrepreneuriat rural et la philanthropie.
+        </p>
+      </div>
+      <div class="skills-wrap">
+        <div class="skill-tag">Artificial Intelligence</div>
+        <div class="skill-tag">Machine Learning</div>
+        <div class="skill-tag">Data Science</div>
+        <div class="skill-tag">Développement Web</div>
+        <div class="skill-tag">Django · Python</div>
+        <div class="skill-tag">Trading & Scalping</div>
+        <div class="skill-tag">Entrepreneuriat</div>
+        <div class="skill-tag">Santé Numérique</div>
+      </div>
+    </div>
+  </section>
 
-        <a href="#about" class="btn">Découvrir</a>
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="section-label">02 — Projets</div>
+    <h2 class="section-title">Ce que je bâtis.</h2>
+    <div class="projects-list">
+
+      <div class="project-card" data-index="01">
+        <div class="project-number">01</div>
+        <div class="project-body">
+          <div class="project-tag">IA · Santé</div>
+          <h3>Détection de la Tuberculose par IA</h3>
+          <p>Système intelligent de détection de la tuberculose pulmonaire à partir d'images radiologiques, développé avec Python, Django et des modèles de deep learning. Un outil conçu pour les contextes à ressources limitées.</p>
+          <div class="project-stack">
+            <span>Python</span><span>Django</span><span>Deep Learning</span><span>Computer Vision</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card" data-index="02">
+        <div class="project-number">02</div>
+        <div class="project-body">
+          <div class="project-tag">Recherche · Mémoire</div>
+          <h3>Technologies Médicales & IA</h3>
+          <p>Travail de recherche approfondi sur l'intégration de l'intelligence artificielle dans les systèmes de santé africains. Une réflexion académique ancrée dans la réalité du terrain congolais.</p>
+          <div class="project-stack">
+            <span>Recherche</span><span>IA Médicale</span><span>Analyse de données</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card" data-index="03">
+        <div class="project-number">03</div>
+        <div class="project-body">
+          <div class="project-tag">ML · Finance</div>
+          <h3>Machine Learning appliqué au Trading</h3>
+          <p>Exploration de modèles prédictifs pour le trading algorithmique, avec un focus sur le scalping sur indices. Fusion entre data science et marchés financiers.</p>
+          <div class="project-stack">
+            <span>Python</span><span>Scikit-learn</span><span>Pandas</span><span>Indices</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card" data-index="04">
+        <div class="project-number">04</div>
+        <div class="project-body">
+          <div class="project-tag">Culture · Philanthropie</div>
+          <h3>DYNASTIE — dynasty_bantou</h3>
+          <p>Fondation culturelle dédiée à la promotion du patrimoine subsaharien et bantu. Un pont entre l'identité ancestrale et l'entrepreneuriat rural, au service des artisans locaux.</p>
+          <div class="project-stack">
+            <span>Entrepreneuriat</span><span>Culture Bantu</span><span>Philanthropie</span>
+          </div>
+        </div>
+      </div>
 
     </div>
+  </section>
 
-</section>
-
-<section id="about">
-
-    <h2>À propos de moi</h2>
-
-    <p>
-        Je suis Soleil Mbayi, protecteur de l'héritage bantou, président fondateur de la Fondation Dynastie Bantou et conférencier engagé dans la préservation des valeurs culturelles africaines.
-    </p>
-
-    <p>
-        Animé par un profond amour pour l'histoire et l'identité africaine, je consacre mon énergie à sensibiliser la jeunesse noire africaine à l'importance de connaître ses racines et de préserver son héritage.
-    </p>
-
-    <p>
-        À travers mes actions, je lutte contre les formes modernes d'impérialisme culturel et j'encourage les jeunes générations à devenir des acteurs du développement de l'Afrique.
-    </p>
-
-</section>
-
-<section id="engagement">
-
-    <h2>Mes Engagements</h2>
-
-    <div class="cards">
-
-        <div class="card">
-            <h3>Héritage Bantou</h3>
-            <p>Protection et valorisation des traditions et de l'histoire bantoue.</p>
+  <!-- BEYOND -->
+  <section id="beyond">
+    <div class="section-label">03 — Au-delà du code</div>
+    <div class="beyond-grid">
+      <div class="beyond-card">
+        <div class="beyond-icon">
+          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8 6h16l8 8v20H8V6z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+            <path d="M24 6v8h8" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+            <path d="M13 20h14M13 26h10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
         </div>
-
-        <div class="card">
-            <h3>Éveil des Consciences</h3>
-            <p>Sensibilisation de la jeunesse africaine à son identité culturelle.</p>
+        <h3>Roman en cours</h3>
+        <p><em>"Mon Péché en tant que Lubas"</em> — Une œuvre littéraire qui plonge dans l'identité, la mémoire et l'appartenance culturelle.</p>
+      </div>
+      <div class="beyond-card">
+        <div class="beyond-icon">
+          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20 4l4 12h12l-10 7 4 12-10-7-10 7 4-12L4 16h12z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+          </svg>
         </div>
-
-        <div class="card">
-            <h3>Conférences</h3>
-            <p>Interventions publiques sur l'identité africaine et le leadership.</p>
+        <h3>Trading & Scalping</h3>
+        <p>Analyse des marchés financiers avec une approche méthodique du scalping sur indices — discipline, lecture du prix et gestion du risque.</p>
+      </div>
+      <div class="beyond-card">
+        <div class="beyond-icon">
+          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="20" cy="14" r="6" stroke="currentColor" stroke-width="2"/>
+            <path d="M6 34c0-7.732 6.268-14 14-14s14 6.268 14 14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
         </div>
-
+        <h3>Vision Entrepreneuriale</h3>
+        <p>Construire des solutions technologiques durables en RDC, allier impact social, patrimoine culturel et innovation pour la génération future.</p>
+      </div>
     </div>
+  </section>
 
-</section>
-
-<section id="skills">
-
-    <h2>Compétences</h2>
-
-    <div class="skills">
-
-        <span>Intelligence Artificielle</span>
-        <span>Développement Web</span>
-        <span>Data Science</span>
-        <span>Leadership</span>
-        <span>Communication</span>
-        <span>Conférences</span>
-
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="section-label">04 — Contact</div>
+    <div class="contact-inner">
+      <h2>Travaillons<br /><em>ensemble.</em></h2>
+      <p>Vous avez un projet, une idée ou simplement envie d'échanger sur l'IA, la tech ou l'entrepreneuriat en Afrique ? Je suis disponible.</p>
+      <div class="contact-links">
+        <a href="mailto:votre@email.com" class="contact-item">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M2 7l10 7 10-7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+          email@gmail.com
+        </a>
+        <a href="mbayisoleil10@gmail.com" class="contact-item">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <rect x="2" y="9" width="4" height="12" rx="1" stroke="currentColor" stroke-width="1.5"/>
+            <circle cx="4" cy="4" r="2" stroke="currentColor" stroke-width="1.5"/>
+          </svg>
+          LinkedIn
+        </a>
+        <a href="#" class="contact-item">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          GitHub
+        </a>
+      </div>
     </div>
+  </section>
 
-</section>
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 Soleil MBAYI — Kinshasa · Mbuji-Mayi · RDC</p>
+    <p class="footer-sub">Construit avec passion & code.</p>
+  </footer>
 
-<section id="contact">
-
-    <h2>Contact</h2>
-
-    <p>Email : mbayisoleil10@gmail.com</p>
-    <p>Téléphone : +243 822208110</p>
-
-</section>
-
-<footer>
-
-    <p>© 2026 Soleil Mbayi - Tous droits réservés</p>
-
-</footer>
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
